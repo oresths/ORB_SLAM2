@@ -534,7 +534,12 @@ void Tracking::Track()
     else
     {
         // This can happen if tracking is lost
-        mlRelativeFramePoses.push_back(mlRelativeFramePoses.back());
+		cv::Mat temp;
+		//The condition here is always true ?
+		if (mlRelativeFramePoses.empty())
+        	mlRelativeFramePoses.push_back(temp);
+		else
+			mlRelativeFramePoses.push_back(mlRelativeFramePoses.back());
         mlpReferences.push_back(mlpReferences.back());
         mlFrameTimes.push_back(mlFrameTimes.back());
         mlbLost.push_back(mState==LOST);
