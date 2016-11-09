@@ -14,5 +14,8 @@ Thirdparty/g2o/lib/
 Vocabulary/ORBvoc.txt
 build/
 lib/
-
+Examples/ROS/ORB_SLAM2/KeyFrameTrajectory.txt
+Examples/ROS/ORB_SLAM2/Slam_latest_Map.bin
+Examples/ROS/ORB_SLAM2/src/.ros_mono.cc.swp
+Examples/ROS/orb_debug/
 

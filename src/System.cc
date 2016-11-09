@@ -92,8 +92,8 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
 
 	if (bReuse)
 	{
-		LoadMap("Slam_Map.bin");
-        
+		LoadMap("Slam_latest_Map.bin");
+
         //mpKeyFrameDatabase->set_vocab(mpVocabulary);
        
         vector<ORB_SLAM2::KeyFrame*> vpKFs = mpMap->GetAllKeyFrames();
